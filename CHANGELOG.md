@@ -4,6 +4,8 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [1.1.2] - 2026-10-02
+
 ### Fixed
 
 - Publication: the production check bypasses the Cloudflare cache of `/cv.pdf` (four hours), so it no longer waits for a version the CDN will not serve before it expires.
