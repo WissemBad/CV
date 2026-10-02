@@ -12,6 +12,9 @@
 // Icône Lucide (licence ISC) alignée sur la ligne de texte.
 #let icon(name) = box(baseline: 0.14em, image("/assets/icons/" + name + ".svg", height: 0.95em))
 
+// Petit logo de certification aligné sur la ligne de texte.
+#let badge(path) = box(baseline: 0.12em, height: 0.85em, image("/assets/logos/" + path, height: 0.85em))
+
 // Contact précédé de son icône.
 #let with-icon(name, body) = [#icon(name)#h(3pt)#body]
 

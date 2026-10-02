@@ -111,6 +111,6 @@
 #section("Langues, certifications et intérêts")
 
 #item("Langues")[Français _(langue maternelle)_ · Anglais B2 · Espagnol A2]
-#item("Certifications")[Certificat Voltaire : 657 · Duolingo English Test : 115]
+#item("Certifications")[#badge("certificat-voltaire.png")#h(3pt)Certificat Voltaire : #link("https://mon.certificat-voltaire.fr/verification-certificat?code=KVNK6HX")[657] · #badge("duolingo.png")#h(3pt)Duolingo English Test : 115]
 #item("Engagement")[Hackathon Orion Jeunesse, ministère des Armées (Lille, mars 2026) : 24 h en équipe]
 #item("Intérêts")[Transports _(ferroviaires, urbains et aéronautiques)_, natation, cinéma, voyages, billard]
