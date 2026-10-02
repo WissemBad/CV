@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Professional experience comes before education.
+
 ## [1.1.3] - 2026-10-02
 
 ### Added

@@ -25,28 +25,6 @@
   Orienté développement logiciel et données, j'ai consacré deux stages à la modernisation d'outils internes utilisés au quotidien, avec une exigence de fiabilité et de confidentialité. Je souhaite désormais m'orienter vers la science des données et la sécurité des systèmes d'information, sur des projets concrets au sein d'une équipe expérimentée.
 ]
 
-#section("Formation")
-
-#entry(
-  logo-path: "/assets/logos/imt.png",
-  org: "IMT Nord Europe · École Mines-Télécom",
-  role: "Diplôme d’ingénieur généraliste · 1re année du cycle ingénieur (Bac+3)",
-  date: "2024 – 2029",
-  place: "Lille (59)",
-)[
-  - Tronc commun scientifique et méthodologique, puis parcours visé en informatique et numérique.
-  - Cycle préparatoire validé en 2026 ; projets : jeu en *C/SDL2*, gestionnaire de mots de passe en *Python*.
-  - Projet en équipe sur 7 mois : gestion du budget, du planning et des livrables.
-]
-
-#entry(
-  logo-path: "/assets/logos/saint-paul.png",
-  org: "Lycée Saint-Paul",
-  role: "Baccalauréat général, spécialités Mathématiques et Physique-Chimie · Mention Très Bien",
-  date: "2021 – 2024",
-  place: "Angoulême (16)",
-)[]
-
 #section("Expérience professionnelle")
 
 #entry(
@@ -73,6 +51,28 @@
   - Fiabilisation des traitements de données et des méthodes de calcul, refonte de l'interface utilisateur.
   - Développement de nouvelles fonctionnalités en *VBA* et validation des résultats sur données réelles.
 ]
+
+#section("Formation")
+
+#entry(
+  logo-path: "/assets/logos/imt.png",
+  org: "IMT Nord Europe · École Mines-Télécom",
+  role: "Diplôme d’ingénieur généraliste · 1re année du cycle ingénieur (Bac+3)",
+  date: "2024 – 2029",
+  place: "Lille (59)",
+)[
+  - Tronc commun scientifique et méthodologique, puis parcours visé en informatique et numérique.
+  - Cycle préparatoire validé en 2026 ; projets : jeu en *C/SDL2*, gestionnaire de mots de passe en *Python*.
+  - Projet en équipe sur 7 mois : gestion du budget, du planning et des livrables.
+]
+
+#entry(
+  logo-path: "/assets/logos/saint-paul.png",
+  org: "Lycée Saint-Paul",
+  role: "Baccalauréat général, spécialités Mathématiques et Physique-Chimie · Mention Très Bien",
+  date: "2021 – 2024",
+  place: "Angoulême (16)",
+)[]
 
 #section("Projets personnels")
 

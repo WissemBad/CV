@@ -25,28 +25,6 @@
   With a focus on software development and data, I spent two internships modernising internal tools used daily, with high standards of reliability and confidentiality. I now aim to move towards data science and information systems security, working on concrete projects within an experienced team.
 ]
 
-#section("Education")
-
-#entry(
-  logo-path: "/assets/logos/imt.png",
-  org: "IMT Nord Europe · Institut Mines-Télécom",
-  role: "General engineering degree (Master’s level) · 1st year of the engineering cycle",
-  date: "2024 – 2029",
-  place: "Lille, France",
-)[
-  - Scientific and methodological core curriculum, then a planned specialisation in computer science.
-  - Completed the integrated preparatory cycle in 2026; projects: *C/SDL2* game, *Python* password manager.
-  - 7-month team project: managing budget, schedule and deliverables.
-]
-
-#entry(
-  logo-path: "/assets/logos/saint-paul.png",
-  org: "Lycée Saint-Paul",
-  role: "French Baccalauréat, Mathematics and Physics-Chemistry · Highest honours",
-  date: "2021 – 2024",
-  place: "Angoulême, France",
-)[]
-
 #section("Professional experience")
 
 #entry(
@@ -73,6 +51,28 @@
   - Made data processing and calculation methods more reliable and redesigned the user interface.
   - Developed new features in *VBA* and validated results against real data.
 ]
+
+#section("Education")
+
+#entry(
+  logo-path: "/assets/logos/imt.png",
+  org: "IMT Nord Europe · Institut Mines-Télécom",
+  role: "General engineering degree (Master’s level) · 1st year of the engineering cycle",
+  date: "2024 – 2029",
+  place: "Lille, France",
+)[
+  - Scientific and methodological core curriculum, then a planned specialisation in computer science.
+  - Completed the integrated preparatory cycle in 2026; projects: *C/SDL2* game, *Python* password manager.
+  - 7-month team project: managing budget, schedule and deliverables.
+]
+
+#entry(
+  logo-path: "/assets/logos/saint-paul.png",
+  org: "Lycée Saint-Paul",
+  role: "French Baccalauréat, Mathematics and Physics-Chemistry · Highest honours",
+  date: "2021 – 2024",
+  place: "Angoulême, France",
+)[]
 
 #section("Personal projects")
 
