@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Professional experience comes before education.
+- Dates: capital letter after the dash ("Juin – Août", "2025 – Aujourd’hui", "2025 – Present").
+
 ## [1.1.3] - 2026-10-02
 
 ### Added

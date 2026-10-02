@@ -25,6 +25,33 @@
   Orienté développement logiciel et données, j'ai consacré deux stages à la modernisation d'outils internes utilisés au quotidien, avec une exigence de fiabilité et de confidentialité. Je souhaite désormais m'orienter vers la science des données et la sécurité des systèmes d'information, sur des projets concrets au sein d'une équipe expérimentée.
 ]
 
+#section("Expérience professionnelle")
+
+#entry(
+  logo-path: "/assets/logos/marianne.png",
+  org: "Direction générale des Finances publiques (DGFiP)",
+  role: "Stage · Développement logiciel et données · Mission Risques et Audit",
+  date: "Juin – Août 2026 · 11 semaines",
+  place: "Paris (75)",
+)[
+  - Refonte d'une application *Python/Tkinter* d'aide à l'audit de paiements (architecture, interface).
+  - Traitement de corpus de plusieurs millions de lignes avec *DuckDB* et *SQLite*, sans calculs redondants.
+  - Développement des recherches libre et multicritère, du contrôle des comptes et d'un assistant de rapport.
+  - Démarche itérative par lots avec l'équipe et les auditeurs, tests de bout en bout et documentation.
+]
+
+#entry(
+  logo-path: "/assets/logos/nidec.png",
+  org: "Nidec Leroy-Somer · Bureau d’études",
+  role: "Stage · Amélioration d’un outil interne de gestion des essais",
+  date: "Janv. – Févr. 2025 · 6 semaines",
+  place: "Angoulême (16)",
+)[
+  - Analyse des besoins des techniciens et ingénieurs utilisant un outil *Excel/VBA* de suivi des essais.
+  - Fiabilisation des traitements de données et des méthodes de calcul, refonte de l'interface utilisateur.
+  - Développement de nouvelles fonctionnalités en *VBA* et validation des résultats sur données réelles.
+]
+
 #section("Formation")
 
 #entry(
@@ -47,40 +74,13 @@
   place: "Angoulême (16)",
 )[]
 
-#section("Expérience professionnelle")
-
-#entry(
-  logo-path: "/assets/logos/marianne.png",
-  org: "Direction générale des Finances publiques (DGFiP)",
-  role: "Stage · Développement logiciel et données · Mission Risques et Audit",
-  date: "Juin – août 2026 · 11 semaines",
-  place: "Paris (75)",
-)[
-  - Refonte d'une application *Python/Tkinter* d'aide à l'audit de paiements (architecture, interface).
-  - Traitement de corpus de plusieurs millions de lignes avec *DuckDB* et *SQLite*, sans calculs redondants.
-  - Développement des recherches libre et multicritère, du contrôle des comptes et d'un assistant de rapport.
-  - Démarche itérative par lots avec l'équipe et les auditeurs, tests de bout en bout et documentation.
-]
-
-#entry(
-  logo-path: "/assets/logos/nidec.png",
-  org: "Nidec Leroy-Somer · Bureau d’études",
-  role: "Stage · Amélioration d’un outil interne de gestion des essais",
-  date: "Janv. – févr. 2025 · 6 semaines",
-  place: "Angoulême (16)",
-)[
-  - Analyse des besoins des techniciens et ingénieurs utilisant un outil *Excel/VBA* de suivi des essais.
-  - Fiabilisation des traitements de données et des méthodes de calcul, refonte de l'interface utilisateur.
-  - Développement de nouvelles fonctionnalités en *VBA* et validation des résultats sur données réelles.
-]
-
 #section("Projets personnels")
 
 #entry(
   logo-path: "/assets/logos/wissem-violet.svg",
   org: "Wissem’s Industries · Infrastructure et applications web",
   role: "Projet personnel · conception, déploiement et maintenance",
-  date: "2025 – aujourd’hui",
+  date: "2025 – Aujourd’hui",
   place: link("https://www.wissem.pro")[Écosystème wissem.pro],
 )[
   - Serveur Linux auto-administré : services *Docker*, déploiement continu, authentification unique.
@@ -92,7 +92,7 @@
   logo-path: "/assets/logos/rubiks.png",
   org: "Rubik’s Network · Communauté de jeu en ligne",
   role: "Contribution technique bénévole",
-  date: "2020 – aujourd’hui",
+  date: "2020 – Aujourd’hui",
   place: "À distance",
 )[
   - Rédaction de spécifications et coordination des mises à jour avec développeurs et graphistes.

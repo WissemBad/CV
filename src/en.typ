@@ -25,28 +25,6 @@
   With a focus on software development and data, I spent two internships modernising internal tools used daily, with high standards of reliability and confidentiality. I now aim to move towards data science and information systems security, working on concrete projects within an experienced team.
 ]
 
-#section("Education")
-
-#entry(
-  logo-path: "/assets/logos/imt.png",
-  org: "IMT Nord Europe · Institut Mines-Télécom",
-  role: "General engineering degree (Master’s level) · 1st year of the engineering cycle",
-  date: "2024 – 2029",
-  place: "Lille, France",
-)[
-  - Scientific and methodological core curriculum, then a planned specialisation in computer science.
-  - Completed the integrated preparatory cycle in 2026; projects: *C/SDL2* game, *Python* password manager.
-  - 7-month team project: managing budget, schedule and deliverables.
-]
-
-#entry(
-  logo-path: "/assets/logos/saint-paul.png",
-  org: "Lycée Saint-Paul",
-  role: "French Baccalauréat, Mathematics and Physics-Chemistry · Highest honours",
-  date: "2021 – 2024",
-  place: "Angoulême, France",
-)[]
-
 #section("Professional experience")
 
 #entry(
@@ -74,13 +52,35 @@
   - Developed new features in *VBA* and validated results against real data.
 ]
 
+#section("Education")
+
+#entry(
+  logo-path: "/assets/logos/imt.png",
+  org: "IMT Nord Europe · Institut Mines-Télécom",
+  role: "General engineering degree (Master’s level) · 1st year of the engineering cycle",
+  date: "2024 – 2029",
+  place: "Lille, France",
+)[
+  - Scientific and methodological core curriculum, then a planned specialisation in computer science.
+  - Completed the integrated preparatory cycle in 2026; projects: *C/SDL2* game, *Python* password manager.
+  - 7-month team project: managing budget, schedule and deliverables.
+]
+
+#entry(
+  logo-path: "/assets/logos/saint-paul.png",
+  org: "Lycée Saint-Paul",
+  role: "French Baccalauréat, Mathematics and Physics-Chemistry · Highest honours",
+  date: "2021 – 2024",
+  place: "Angoulême, France",
+)[]
+
 #section("Personal projects")
 
 #entry(
   logo-path: "/assets/logos/wissem-violet.svg",
   org: "Wissem’s Industries · Infrastructure and web applications",
   role: "Personal project · design, deployment and maintenance",
-  date: "2025 – present",
+  date: "2025 – Present",
   place: link("https://www.wissem.pro")[wissem.pro ecosystem],
 )[
   - Self-managed Linux server: *Docker* services, continuous deployment, single sign-on.
@@ -92,7 +92,7 @@
   logo-path: "/assets/logos/rubiks.png",
   org: "Rubik’s Network · Online gaming community",
   role: "Volunteer technical contributor",
-  date: "2020 – present",
+  date: "2020 – Present",
   place: "Remote",
 )[
   - Wrote specifications and coordinated updates with developers and designers.
