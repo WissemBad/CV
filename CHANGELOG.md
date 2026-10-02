@@ -1,13 +1,17 @@
 # Changelog
 
+All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and versions follow [Semantic Versioning](https://semver.org/).
+
+## [Unreleased]
+
 ## [1.0.0] - 2026-10-02
 
 ### Added
 
-- Sources Typst réparties en `src/` (modèle, coordonnées, contenu FR et EN) et `assets/`.
-- Variante publique (sans téléphone, nationalité ni permis) et variante complète compilée en local.
-- Publication automatique des PDF, aperçus et cartes de partage publics (1200 x 630) dans une Release GitHub à chaque tag.
+- Typst sources split into `src/` (template, contact details, French and English content) and `assets/`.
+- Public variant (without phone number, nationality or driving licence) and a full variant built locally.
+- Automatic release of the public PDFs, previews and 1200 x 630 share cards on every tag.
 
 ### Changed
 
-- Certifications : Duolingo English Test 115, TOEIC retiré.
+- Certifications: Duolingo English Test 115, TOEIC removed.

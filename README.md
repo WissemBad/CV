@@ -1,47 +1,48 @@
 # CV · Wissem Badraoui
 
-CV d'une page A4 en Typst, en français et en anglais, avec deux variantes.
+One-page A4 resume written in Typst, in French and English, in two variants.
 
-| Variante | Contenu | Où |
+| Variant | Content | Where |
 | --- | --- | --- |
-| Publique | Sans téléphone, nationalité ni permis | Release GitHub, relayée par [www.wissem.pro/cv](https://www.wissem.pro/cv) |
-| Complète | Avec ces informations | Compilée en local, jamais publiée |
+| Public | Without phone number, nationality or driving licence | GitHub release, served on [wissem.pro/cv](https://www.wissem.pro/cv) |
+| Full | With these details | Built locally, never published |
 
-Une partie de la rédaction est faite avec l'aide d'une IA ; le contenu est relu et validé par Wissem.
+Part of the writing is done with the help of AI; the content is reviewed and approved by Wissem.
 
-## Structure
+## Layout
 
-| Chemin | Rôle |
+| Path | Role |
 | --- | --- |
-| `src/fr.typ`, `src/en.typ` | Contenu, à garder synchronisé |
-| `src/profile.typ` | Coordonnées, selon la variante |
-| `src/template.typ` | Mise en forme |
-| `assets/` | Polices Geist (OFL), icônes Lucide (ISC), logos |
-| `scripts/` | Compilation, contrôle, publication |
-| `private.example.toml` | Modèle des données personnelles (`private.toml`, ignoré par git) |
+| `src/fr.typ`, `src/en.typ` | Content, kept in sync |
+| `src/profile.typ` | Contact details, per variant |
+| `src/template.typ` | Layout |
+| `assets/` | Geist fonts (OFL), Lucide icons (ISC), logos |
+| `scripts/` | Build, checks, release |
+| `private.example.toml` | Template of the personal data (`private.toml`, ignored by git) |
 
-## Compiler
+## Build
 
-Prérequis : [Typst](https://typst.app) 0.15.1 (`winget install --id Typst.Typst`) et Bun.
+Requires [Typst](https://typst.app) 0.15.1 (`winget install --id Typst.Typst`) and Bun.
 
 ```bash
-bun run build        # variante publique dans dist/ (PDF et PNG)
-bun run build:full   # variante complète, lit private.toml ou WSM_CV_PRIVATE
-bun run check        # aucune donnée personnelle dans src/ et scripts/
-bun run watch        # recompile le français à chaque sauvegarde
+bun run build        # public variant in dist/ (PDF and PNG)
+bun run build:full   # full variant, reads private.toml or WSM_CV_PRIVATE
+bun run check        # no personal data in src/ and scripts/
+bun run watch        # rebuilds the French version on save
 ```
 
-Le build échoue si un PDF dépasse une page.
+The build fails if a PDF is longer than one page.
 
-## Publier
+## Release
 
-1. Modifier `src/fr.typ` et `src/en.typ`, puis `bun run check && bun run build`.
-2. Incrémenter `version` dans `package.json`, ajouter l'entrée du `CHANGELOG.md`.
-3. Tag `vX.Y.Z` identique à la version : la CI compile et crée la Release avec les PDF et PNG publics.
-4. Le site relaie la dernière Release (cache de 15 minutes) sur `/cv.pdf` et `/en/cv.pdf`.
+Versions follow Semantic Versioning and changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
-Le lien LinkedIn (section Sélection) est ajouté une fois à la main : `https://www.wissem.pro/cv`.
+```bash
+bun run release 1.1.0   # updates package.json and the changelog
+```
 
-## Licence
+Merge, then push the `v1.1.0` tag: the pipeline builds the public variant and creates the GitHub release with the PDFs, previews and share cards. The site serves the latest release (15-minute cache) on `/cv.pdf` and `/en/cv.pdf`.
 
-Contenu du CV : tous droits réservés. Modèle et scripts : MIT, voir `LICENSE`.
+## License
+
+Resume content: all rights reserved. Template and scripts: MIT, see [LICENSE](LICENSE).
