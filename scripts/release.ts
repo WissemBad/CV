@@ -34,6 +34,8 @@ const assets = [
   ['CV_Wissem_Badraoui_EN.pdf', 'application/pdf'],
   ['CV_Wissem_Badraoui_FR.png', 'image/png'],
   ['CV_Wissem_Badraoui_EN.png', 'image/png'],
+  ['CV_Wissem_Badraoui_FR_SOCIAL.png', 'image/png'],
+  ['CV_Wissem_Badraoui_EN_SOCIAL.png', 'image/png'],
 ] as const
 
 for (const [name, type] of assets) {

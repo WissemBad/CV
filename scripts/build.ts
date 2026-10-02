@@ -48,7 +48,10 @@ for (const lang of langs) {
 
   const count = readdirSync(pages).length
   if (count !== 1) throw new Error(`${base}.pdf compte ${count} pages, une seule est autorisée`)
-  if (!full) await Bun.write(`${dist}/${base}.png`, Bun.file(`${pages}/1.png`))
+  if (!full) {
+    await Bun.write(`${dist}/${base}.png`, Bun.file(`${pages}/1.png`))
+    typst(['--input', `lang=${lang}`, '--format', 'png', '--ppi', '72', 'src/social.typ', `${dist}/${base}_SOCIAL.png`])
+  }
   rmSync(pages, { recursive: true, force: true })
   console.log(`${base}.pdf : 1 page`)
 }
