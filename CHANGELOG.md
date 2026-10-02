@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Sharing card: same layout as the home page of wissem.pro (logo, name, title and address at the same positions), and "Élève ingénieur" without the hyphen.
+
 ## [1.0.1] - 2026-10-02
 
 ### Added
