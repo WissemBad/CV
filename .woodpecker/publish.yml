@@ -1,0 +1,32 @@
+depends_on: [check]
+when:
+  - event: tag
+    ref: refs/tags/v*
+concurrency:
+  limit: 1
+  group: publish-cv
+
+steps:
+  - name: verify-release
+    image: oven/bun:alpine
+    commands:
+      - test "v$(bun -p 'require("./package.json").version')" = "$${CI_COMMIT_TAG}"
+      - sh scripts/install-typst.sh
+      - bun run build
+
+  - name: create-release
+    image: oven/bun:alpine
+    depends_on: [verify-release]
+    environment:
+      GITHUB_RELEASE_TOKEN:
+        from_secret: github_release_token
+    commands:
+      - bun scripts/release.ts
+
+  - name: verify-production
+    image: oven/bun:alpine
+    depends_on: [create-release]
+    environment:
+      PRODUCTION_URL: https://www.wissem.pro/cv.pdf
+    commands:
+      - bun scripts/verify-production.ts

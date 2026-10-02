@@ -1,0 +1,13 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CV de Wissem Badraoui en Typst, variantes publique et complète, FR et EN",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "build:full": "bun scripts/build.ts --full",
+    "check": "bun scripts/check.ts",
+    "watch": "typst watch --root . --font-path assets/fonts --ignore-system-fonts src/fr.typ dist/CV_Wissem_Badraoui_FR.pdf"
+  }
+}
