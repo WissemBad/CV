@@ -21,13 +21,27 @@ function notes(version: string) {
   return rest.split(/^## \[/m)[0]?.trim() ?? ''
 }
 
-const created = await fetch(`https://api.github.com/repos/${repo}/releases`, {
-  method: 'POST',
-  headers,
-  body: JSON.stringify({ tag_name: tag, name: tag, body: notes(tag.slice(1)), draft: false, prerelease: false }),
-})
-if (!created.ok) throw new Error(`Création de la release : ${created.status} ${await created.text()}`)
-const release = (await created.json()) as { id: number }
+type Release = { id: number; assets: { name: string }[] }
+
+async function findOrCreateRelease(): Promise<Release> {
+  const existing = await fetch(`https://api.github.com/repos/${repo}/releases/tags/${tag}`, { headers })
+  if (existing.ok) {
+    console.log(`Release ${tag} déjà présente : seuls les fichiers manquants sont déposés`)
+    return (await existing.json()) as Release
+  }
+  if (existing.status !== 404) throw new Error(`Lecture de la release : ${existing.status} ${await existing.text()}`)
+
+  const created = await fetch(`https://api.github.com/repos/${repo}/releases`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ tag_name: tag, name: tag, body: notes(tag.slice(1)), draft: false, prerelease: false }),
+  })
+  if (!created.ok) throw new Error(`Création de la release : ${created.status} ${await created.text()}`)
+  return (await created.json()) as Release
+}
+
+const release = await findOrCreateRelease()
+const uploaded = new Set(release.assets.map((asset) => asset.name))
 
 const assets = [
   ['CV_Wissem_Badraoui_FR.pdf', 'application/pdf'],
@@ -39,6 +53,7 @@ const assets = [
 ] as const
 
 for (const [name, type] of assets) {
+  if (uploaded.has(name)) continue
   const upload = await fetch(`https://uploads.github.com/repos/${repo}/releases/${release.id}/assets?name=${name}`, {
     method: 'POST',
     headers: { ...headers, 'Content-Type': type },
