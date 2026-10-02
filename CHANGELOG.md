@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Sharing card: title "Mon CV" / "My resume" with a subtitle, without the name and status already shown on the profile where the link is shared. The resume itself is unchanged.
+
 ## [1.1.1] - 2026-10-02
 
 ### Fixed
