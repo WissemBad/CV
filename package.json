@@ -8,6 +8,7 @@
     "build": "bun scripts/build.ts",
     "build:full": "bun scripts/build.ts --full",
     "check": "bun scripts/check.ts",
+    "release": "bun scripts/prepare-release.mjs",
     "watch": "typst watch --root . --font-path assets/fonts --ignore-system-fonts src/fr.typ dist/CV_Wissem_Badraoui_FR.pdf"
   }
 }
