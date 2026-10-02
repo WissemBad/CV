@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-10-02
+
+### Added
+
+- Certifications: a small logo for each one (Certificat Voltaire, Duolingo), and the Certificat Voltaire score links to its verification page.
+
 ## [1.1.2] - 2026-10-02
 
 ### Fixed
