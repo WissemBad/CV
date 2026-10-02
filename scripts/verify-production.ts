@@ -1,4 +1,5 @@
 // Attend que le site serve la version du tag courant (Home met la Release en cache 15 minutes).
+// Cloudflare garde /cv.pdf quatre heures : chaque essai passe par une adresse unique pour lire l'origine.
 const url = process.env.PRODUCTION_URL
 const tag = process.env.CI_COMMIT_TAG
 if (!url || !tag) throw new Error('PRODUCTION_URL ou CI_COMMIT_TAG manquant.')
@@ -6,7 +7,7 @@ if (!url || !tag) throw new Error('PRODUCTION_URL ou CI_COMMIT_TAG manquant.')
 let last = 'aucune réponse'
 for (let attempt = 0; attempt < 40; attempt++) {
   try {
-    const response = await fetch(url, { signal: AbortSignal.timeout(15000) })
+    const response = await fetch(`${url}?check=${Date.now()}`, { signal: AbortSignal.timeout(15000) })
     last = `${response.status} ${response.headers.get('x-wsm-cv-version') ?? 'sans version'}`
     if (response.ok && response.headers.get('x-wsm-cv-version') === tag) {
       console.log(`${url} sert ${tag}`)
