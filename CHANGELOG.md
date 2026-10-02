@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Certifications: the Certificat Voltaire logo also links to the verification page.
+
 ## [1.1.4] - 2026-10-02
 
 ### Changed

@@ -111,6 +111,6 @@
 #section("Languages, certifications and interests")
 
 #item("Languages")[French _(native)_ · English B2 · Spanish A2]
-#item("Certifications")[#badge("certificat-voltaire.png")#h(3pt)Certificat Voltaire (French spelling): #link("https://mon.certificat-voltaire.fr/verification-certificat?code=KVNK6HX")[657] · #badge("duolingo.png")#h(3pt)Duolingo English Test: 115]
+#item("Certifications")[#link("https://mon.certificat-voltaire.fr/verification-certificat?code=KVNK6HX")[#badge("certificat-voltaire.png")]#h(3pt)Certificat Voltaire (French spelling): #link("https://mon.certificat-voltaire.fr/verification-certificat?code=KVNK6HX")[657] · #badge("duolingo.png")#h(3pt)Duolingo English Test: 115]
 #item("Engagement")[Orion Jeunesse Hackathon, French Ministry of Armed Forces · Lille, March 2026 · 24 h]
 #item("Interests")[Transport _(rail, urban and aviation)_, swimming, cinema, travel, billiards]
