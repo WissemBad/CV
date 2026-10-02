@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-10-02
+
+### Fixed
+
+- Publication: running the tag pipeline again completes the existing release instead of failing. The resume itself is unchanged.
+
 ## [1.1.0] - 2026-10-02
 
 ### Changed
