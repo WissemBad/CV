@@ -80,7 +80,7 @@
   logo-path: "/assets/logos/wissem-violet.svg",
   org: "Wissem’s Industries · Infrastructure and web applications",
   role: "Personal project · design, deployment and maintenance",
-  date: "2025 – present",
+  date: "2025 – Present",
   place: link("https://www.wissem.pro")[wissem.pro ecosystem],
 )[
   - Self-managed Linux server: *Docker* services, continuous deployment, single sign-on.
@@ -92,7 +92,7 @@
   logo-path: "/assets/logos/rubiks.png",
   org: "Rubik’s Network · Online gaming community",
   role: "Volunteer technical contributor",
-  date: "2020 – present",
+  date: "2020 – Present",
   place: "Remote",
 )[
   - Wrote specifications and coordinated updates with developers and designers.

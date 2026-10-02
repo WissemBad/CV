@@ -31,7 +31,7 @@
   logo-path: "/assets/logos/marianne.png",
   org: "Direction générale des Finances publiques (DGFiP)",
   role: "Stage · Développement logiciel et données · Mission Risques et Audit",
-  date: "Juin – août 2026 · 11 semaines",
+  date: "Juin – Août 2026 · 11 semaines",
   place: "Paris (75)",
 )[
   - Refonte d'une application *Python/Tkinter* d'aide à l'audit de paiements (architecture, interface).
@@ -44,7 +44,7 @@
   logo-path: "/assets/logos/nidec.png",
   org: "Nidec Leroy-Somer · Bureau d’études",
   role: "Stage · Amélioration d’un outil interne de gestion des essais",
-  date: "Janv. – févr. 2025 · 6 semaines",
+  date: "Janv. – Févr. 2025 · 6 semaines",
   place: "Angoulême (16)",
 )[
   - Analyse des besoins des techniciens et ingénieurs utilisant un outil *Excel/VBA* de suivi des essais.
@@ -80,7 +80,7 @@
   logo-path: "/assets/logos/wissem-violet.svg",
   org: "Wissem’s Industries · Infrastructure et applications web",
   role: "Projet personnel · conception, déploiement et maintenance",
-  date: "2025 – aujourd’hui",
+  date: "2025 – Aujourd’hui",
   place: link("https://www.wissem.pro")[Écosystème wissem.pro],
 )[
   - Serveur Linux auto-administré : services *Docker*, déploiement continu, authentification unique.
@@ -92,7 +92,7 @@
   logo-path: "/assets/logos/rubiks.png",
   org: "Rubik’s Network · Communauté de jeu en ligne",
   role: "Contribution technique bénévole",
-  date: "2020 – aujourd’hui",
+  date: "2020 – Aujourd’hui",
   place: "À distance",
 )[
   - Rédaction de spécifications et coordination des mises à jour avec développeurs et graphistes.
