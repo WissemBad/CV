@@ -4,6 +4,14 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Fixed
+
+- Publication: the production check bypasses the Cloudflare cache of `/cv.pdf` (four hours), so it no longer waits for a version the CDN will not serve before it expires.
+
+### Changed
+
+- Sharing card: title "Mon CV" / "My resume" with a subtitle, without the name and status already shown on the profile where the link is shared. The resume itself is unchanged.
+
 ## [1.1.1] - 2026-10-02
 
 ### Fixed

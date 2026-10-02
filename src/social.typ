@@ -1,10 +1,10 @@
 // Carte de partage 1200 x 630 (aperçu LinkedIn et réseaux). Entrées : lang (fr|en).
-// Même gabarit que la carte de l'accueil de wissem.pro : logo, nom, intitulé et adresse aux mêmes positions.
+// Le nom et l'intitulé sont déjà dans le profil qui affiche le lien : la carte porte le message propre au CV.
 // L'aperçu du CV est lu dans dist/ : build.ts le génère avant cette carte.
 #let lang = sys.inputs.at("lang", default: "fr")
 #let t = (
-  fr: (kicker: "CURRICULUM VITAE", status: "Élève ingénieur à IMT Nord Europe"),
-  en: (kicker: "RESUME", status: "Engineering student at IMT Nord Europe"),
+  fr: (kicker: "CURRICULUM VITAE", title: "Mon CV", topics: "Formation, stages et projets"),
+  en: (kicker: "RESUME", title: "My resume", topics: "Education, internships and projects"),
 ).at(lang)
 #let ink = rgb("#0a0a0a")
 #let ink-2 = rgb("#15101f")
@@ -30,10 +30,8 @@
 #place(top + left, dx: 80pt, dy: 72pt, image("/assets/logos/wissem-white.svg", width: 72pt))
 
 #place(top + left, dx: 80pt, dy: 156pt, text(size: 20pt, weight: "medium", tracking: 3.5pt, fill: violet-soft)[#t.kicker])
-#let name-line(dy, body) = place(top + left, dx: 80pt, dy: dy, text(size: 104pt, weight: "semibold", tracking: -5.2pt, top-edge: "ascender", bottom-edge: "descender")[#body])
-#name-line(183pt)[Wissem]
-#name-line(280pt)[Badraoui]
-#place(top + left, dx: 80pt, dy: 440pt, text(size: 36pt, weight: "medium", fill: white.transparentize(14%))[#t.status])
+#place(top + left, dx: 80pt, dy: 200pt, text(size: 128pt, weight: "semibold", tracking: -6.4pt, top-edge: "ascender", bottom-edge: "descender")[#t.title])
+#place(top + left, dx: 80pt, dy: 424pt, text(size: 36pt, weight: "medium", fill: white.transparentize(14%))[#t.topics])
 #place(top + left, dx: 80pt, dy: 530pt, text(font: "DejaVu Sans Mono", size: 24pt, weight: "medium", fill: white.transparentize(40%))[www.wissem.pro/cv])
 
 #place(top + left, dx: 750pt, dy: 70pt, rotate(
